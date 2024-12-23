@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+    font-family: 'NEXTART';
+    src: url('fonts/NEXT ART_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(img/start-background.jpg);
+    background-position: center;
+}
+
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.header-lists{
+    list-style: none;
+    display: flex;
+}
+
+.header-item {
+    margin-right: 20px;
+}
+
+.header-item-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header-item-link:hover{
+    color:#F2BE22;
+}
+
+.header-consultation{
+    display: flex;
+    background-color: #1A3E3E;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-title{
+    margin-top: 200px;
+    font-size: 50px;    
+    font-family: 'NEXTART', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    padding: 20px;
+}
+
+.start-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.start-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.choices {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Nunito Sans", serif;
+}
+
+
+.choices_inner {
+    position: relative;
+    width: 100%;
+}
+
+
+.start-location {
+    border: 2px solid #f0f0f0;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+}
+
+.start-location option{
+    font-family: "Nunito Sans", serif;
+}
