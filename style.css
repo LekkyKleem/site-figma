@@ -368,6 +368,7 @@ option{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     gap: 20px;
+    max-width: 420px;
 }
 
 .popular-content-1,
@@ -379,7 +380,8 @@ option{
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .popular img {
@@ -748,4 +750,149 @@ option{
     text-decoration: none;
     margin-top: 20px;
     color: white;
+}
+
+.header-burger-line{
+    height: 5px;
+    width: 10px;
+}
+
+@media (max-width: 420px) {
+    .start-title {
+        font-size: 20px;
+    }
+
+    .header-item-link {
+        font-size: 16px;
+    }
+
+    .start-search {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .start-location, .start-date, .choice-input {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .start-search-program {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .about, .offer,.popular,.blog, .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .popular, .gallery {
+        margin-left: 0;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .footer-down {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-lists{
+        display: none;
+    }
+
+    .header-consultation{
+        display: none;
+    }
+
+    .header-burger{
+        position: relative;
+        right: 35px;
+    }
+
+    .start-label{
+        display: none;
+    }
+
+    .start-search-program{
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+
+    .about-media{
+        display: none;
+    }
+    
+    .about{
+        position: relative;
+        text-align: center;
+        left: 70px;
+    }
+
+    .offer{
+        position: relative;
+        text-align: center;
+    }
+
+    .offer-media{
+        display: none;
+    }
+
+    .popular{
+        position: relative;
+        left: 7px;
+    }
+
+    .blog{
+        position: relative;
+        right: 145px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        width: 405px
+    }
+
+    .gallery{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery img{
+        position: relative;
+        right: 150px;
+        width: 100%;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .newsletter {
+        position: relative;
+        left: 5px;
+        top: 0px;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .services{
+        position: relative;
+        right: 35px;
+    }
+
+    .important{
+        display: none;
+    }
+    
+    .footer div{
+        font-size: 15px;
+    }
+
+    .footer h1, p{
+        font-size: 15px;
+    }
 }
